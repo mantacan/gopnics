@@ -10,7 +10,7 @@ services:
       POSTGRES_PASSWORD: mantacan666
       POSTGRES_DB: minecraft_updates
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
       - postgres_data:/var/lib/postgresql/data
